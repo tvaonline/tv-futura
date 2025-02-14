@@ -1,0 +1,21 @@
+{
+    "channels": {
+        "SBT": {
+            "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8",
+            "name": "SBT",
+            "logo": "https://example.com/sbt_logo.png",
+            "location": "Rua Carlos Cyrillo Jr, 92 - Vila Guilherme, São Paulo - SP, 02079-000, Brasil",
+            "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4795672212055!2d-46.65130688502233!3d-23.56437298467964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c9e7a4c1f1%3A0x9eebd4a9a5b3a97a!2sRua%20Carlos%20Cyrillo%20Jr%2C%2092%20-%20Vila%20Guilherme%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002079-000%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1615727972905!5m2!1spt-BR!2sus",
+            "currentProgram": "Programa do Ratinho"
+        },
+        "TV Gazeta": {
+            "url": "https://linear-918.frequency.stream/mt/plex/918/hls/master/playlist_1920x1080.m3u8",
+            "name": "TV Gazeta",
+            "logo": "https://kub.sh/444bd2",
+            "location": "Avenida Paulista, 900 - Bela Vista, São Paulo - SP, 01310-100, Brasil",
+            "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4795672212055!2d-46.65130688502233!3d-23.56437298467964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c9e7a4c1f1%3A0x9eebd4a9a5b3a97a!2sAvenida%20Paulista%2C%20900%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1615727972905!5m2!1spt-BR!2sus",
+            "currentProgram": "Jornal da Gazeta"
+        }
+        // Adicione mais canais conforme necessário
+    }
+}

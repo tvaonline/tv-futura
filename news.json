@@ -1,0 +1,21 @@
+document.addEventListener('DOMContentLoaded', function() {
+    function loadNews(channelName) {
+        fetch('news.json')
+            .then(response => response.json())
+            .then(data => {
+                const newsList = data.news[channelName] || [];
+                const newsContent = document.getElementById('newsContent');
+                newsContent.innerHTML = newsList.map(news => `<p>${news}</p>`).join('');
+            })
+            .catch(error => {
+                console.error('Erro ao carregar as notícias:', error);
+            });
+    }
+
+    // Obter o nome do canal a partir da URL (ex: ?channel=SBT)
+    const urlParams = new URLSearchParams(window.location.search);
+    const channelName = urlParams.get('channel');
+
+    // Carregar as notícias do canal
+    loadNews(channelName);
+});

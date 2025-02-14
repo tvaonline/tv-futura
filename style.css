@@ -1,0 +1,302 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-bottom: 60px; /* Ajuste conforme necessário */
+}
+
+/* Contêiner principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #FF4F00;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/* Navegação */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #FF4F00;
+    width: 100%;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.navbar .menu li {
+    margin: 10px 20px;
+}
+
+.navbar .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar .menu li a:hover {
+    text-decoration: underline;
+}
+
+.site-logo img {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 20px; /* Ajuste o tamanho conforme necessário */
+    margin-top: 10px;
+}
+
+/* Player */
+.player-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Canal */
+.channel-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.channel-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.channel-name {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+/* Informações */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.channel-info, .live-programming {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.channel-info h2, .live-programming h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.channel-info p, .live-programming p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navbar .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar .menu li {
+        margin: 5px 10px;
+    }
+
+    .player-container, .channel-info, .live-programming {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .channel-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .channel-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .channel-name {
+        font-size: 20px;
+    }
+
+    .channel-info h2, .live-programming h3 {
+        font-size: 20px;
+    }
+
+    .channel-info p, .live-programming p {
+        font-size: 14px;
+    }
+
+    .info-container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar .menu li {
+        margin: 5px 10px;
+    }
+
+    .player-container, .channel-info, .live-programming {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .channel-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .channel-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .channel-name {
+        font-size: 20px;
+    }
+
+    .channel-info h2, .live-programming h3 {
+        font-size: 20px;
+    }
+
+    .channel-info p, .live-programming p {
+        font-size: 14px;
+    }
+
+    .info-container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar .menu li {
+        margin: 5px 10px;
+    }
+
+    .channel-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .channel-name {
+        font-size: 18px;
+    }
+
+    .channel-info, .live-programming {
+        padding: 5px;
+    }
+
+    .channel-info h2, .live-programming h3 {
+        font-size: 18px;
+    }
+
+    .channel-info p, .live-programming p {
+        font-size: 12px;
+    }
+
+    .info-container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.footer .social-icons {
+    margin-bottom: -5px;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer .social-icons a:hover {
+    color: #ff6347;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
